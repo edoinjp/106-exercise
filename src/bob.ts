@@ -5,8 +5,7 @@ function bobsResponse(question: string): string {
     return "Fine. Be that way!";
   }
 
-  const isYelling =
-    /[a-z]/i.test(trimmedQuestion) &&
+  const isYelling = /[a-z]/i.test(trimmedQuestion) &&
     trimmedQuestion === trimmedQuestion.toUpperCase();
 
   const isQuestion = trimmedQuestion.endsWith("?");
